@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!-- This head section contains all the invisible information about the page -->    
+<head>
+    <title>The Floral Spot - Events</title>
+    <meta charset= "utf-8">
+    <meta name = "description" content = "This is a website for a community of people interested in flowers.">
+    <meta name = "author" content = "Online Flower Community">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "Flowers Floral Community Online">
+    <link rel = "stylesheet" type = "text/css" href = "Stylesheets/style.css">
+    
+</head>
+
+<body>
+
+<!-- Top navigation bar -->
+<nav> 
+    <!-- Logo -->
+    <div class="logo">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="The Floral Spot logo" width="350" height="90"></a>
+    </div>    
+    
+    <!-- links to the other pages of the website -->
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="links">
+        <ul>
+            <li><a href="index.html"><h1>HOME</h1></a></li>
+            <li><a href="flowerfacts.html"><h1>Flower Facts</h1></a></li>
+            <li><a href="industry.html"><h1>The Flower Industry</h1></a></li>
+            <li><a href="guides.html"><h1>Flower Care Guides</h1></a></li>
+            <li><a href="events.html"><h1>Events</h1></a></li>
+            <li><a href=""><img class="search" src="images/search.jpg" alt="search" width="30" height="30"></a></li>
+        </ul>
+    </div>
+</nav>
+    
+<!--Introduction to the page-->
+<div class="page-intro">
+    <h1>Events</h1>
+    <h3>A variety of events, from flower exhibitions to workshops are all over the nation for us to join and engage in. Find out the different events that suit your interests and timing. We also have our weekly or monthly discussions for members of the Club to interact and have a fruitful time together. An ongoing pandemic would not deter the club members from having hearty discussions as we have plenty of online meetings planned! </h3>
+</div>
+    
+<aside class="pagesAside">    
+<!-- Search bar for specific categories -->
+<div class="categorySearch">
+    <input type="text" placeholder="Search for events..." name="search">
+</div>
+    
+<!-- Links to articles from popular categories -->
+<div class="rightCategories">
+    <h2>Types of events</h2>
+<ul>
+    <li><a href="#">Workshops</a></li>
+    <li><a href="#">Flower display shows</a></li>
+    <li><a href="#">Exhibitions</a></li>
+    <li><a href="#">Volunteer services</a></li>
+    <li><a href="#">Educational</a></li>
+    <li><a href="#">The Floral Spot sessions</a></li>
+</ul>
+
+</div>
+    
+<div class="twoForms">
+<!-- Form to subscribe to newsletter -->
+<div class="form">
+<h2>Subscribe to our newsletter</h2>
+<p>(* denotes compulsory fields)</p>
+    *Name: &nbsp &nbsp &nbsp
+    <input type="text" id="name" width="30">
+    <br /><br />
+    *Email: &nbsp &nbsp &nbsp
+    <input type="text" id="email" size="30">
+
+    <br />
+    <br />
+    <br />
+
+<p class="topicNewsletter">
+I would like to receive newsletters in one or more of the following areas:  
+</p>
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Natural Wonders"> Flower Facts <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Deep Sea Explorations"> The Flower Industry <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Forest Walkabout"> Flower Care Guides <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Mountain Climbing Expedition"> Events <br />
+        
+<br />
+
+<button onclick="checkFormData()">Submit</button>
+<button onClick="resetFormData()"> Reset Form  </button>
+</div>
+    
+<!-- Form to submit enquiries -->
+<div class="enquiry">
+    <h2>Enquiries</h2>
+    <p id="textareaHeader"> Feel free to drop us any questions, suggestions or enquiries you may have: </p>
+
+    <textarea name="REMARKS" id="REMARKS-TEXT-AREA" rows="8" cols="48"></textarea>
+    
+    <br />
+    <br />
+    
+    *Name: &nbsp &nbsp &nbsp
+    <input type="text" id="name" width="30">
+    <br /><br />
+    *Email: &nbsp &nbsp &nbsp
+    <input type="text" id="email" size="30">
+    
+    <br />
+    <br />
+
+    <button onClick="checkFormData()">   Submit       </button>
+    <button onClick="resetFormData()">   Reset Form   </button>
+</div>
+</div>
+    
+</aside>
+    
+<!-- main content -------------------------------------->
+    
+<!-- filter events -->
+<div class="filterHeading">
+    <h1>Filter categories to find events</h1>
+</div>
+    
+<div class="filterEvents">
+<div class="dropdown">
+  <button class="dropbtn">Time</button>
+  <div class="dropdown-content">
+    <a href="#home">Any time</a>
+    <a href="#about">Morning</a>
+    <a href="#contact">Afternoon</a>
+    <a href="#contact">Night</a>
+  </div>
+</div>
+    
+<div class="dropdown">
+  <button class="dropbtn">Day</button>
+  <div class="dropdown-content">
+    <a href="#home">Any day</a>
+    <a href="#about">Today</a>
+    <a href="#contact">This week</a>
+    <a href="#contact">This month</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Age Group</button>
+  <div class="dropdown-content">
+    <a href="#home">Children (ages 0 to 10)</a>
+    <a href="#about">Youth (ages 11 to 19)</a>
+    <a href="#contact">Adults (ages 20 to 59)</a>
+    <a href="#contact">Elderly (ages 60 and above)</a>
+  </div>
+</div>
+    
+<div class="dropdown">
+  <button class="dropbtn">Visitors</button>
+  <div class="dropdown-content">
+    <a href="#home">Children</a>
+    <a href="#about">Family</a>
+    <a href="#contact">Flower enthusiasts</a>
+    <a href="#contact">Volunteers</a>
+  </div>
+</div>
+</div>
+
+    
+<!-- current/upcoming events -->
+<div id="articles-container">
+    <h1>Current/Upcoming events</h1>    
+
+<!-- First event -->
+<div class="article">
+    <a href="https://www.gardensbythebay.com.sg/en/attractions/flower-dome/changing-floral-display.html">
+    <img src="images/events1.jpg" alt="SAKURA FEATURING HELLO KITTY" width="400" height="250"></a>
+
+    <a href="https://www.gardensbythebay.com.sg/en/attractions/flower-dome/changing-floral-display.html"><h3>SAKURA FEATURING HELLO KITTY</h3></a>
+    <ul>
+        <li>Day: From 1 March 2021</li>
+        <li>Time: 9.00am to 9.00pm</li>
+        <li>Venue: Flower Dome</li>
+    </ul>
+</div>
+    
+<!-- second event -->   
+<div class="article">
+    <a href="https://www.nparks.gov.sg/activities/events-and-workshops/2021/3/orchid-garden-tour">
+    <img src="images/events2.jpg" alt="ORCHID GARDEN TOUR" width="400" height="250"></a>
+
+    <a href="https://www.nparks.gov.sg/activities/events-and-workshops/2021/3/orchid-garden-tour"><h3>ORCHID GARDEN TOUR</h3></a>
+    <ul>
+        <li>Day: 20 March 2021</li>
+        <li>Time: 9.00am to 4.00pm</li>
+        <li>Venue: Singapore Botanic Gardens, Visitor Services Desk at Nassim Gate</li>
+    </ul>
+</div>
+    
+<!-- third event -->
+<div class="article">
+    <a href="https://www.gardensbythebay.com.sg/en/attractions/floral-fantasy/visitor-information.html">
+    <img src="images/events3.jpg" alt="FLORAL FANTASY" width="400" height="250"></a>
+    
+    <a href="https://www.gardensbythebay.com.sg/en/attractions/floral-fantasy/visitor-information.html"><h3>FLORAL FANTASY</h3></a>
+    <ul>
+        <li>Weekdays: 10.00am to 7.00pm</li>
+        <li>Weekends and Public Holidays: 10.00am to 8.00pm</li>
+        <li>Venue: Bayfront Plaza</li>
+    </ul>
+</div>
+    
+<br>
+
+<!-- pagination -->
+<div class="pagination">
+    <a href="#">&laquo;</a>
+    <a class="active" href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+</div>
+    
+</div>
+
+<!-- footer -->
+<footer>
+    <h3>Follow us on</h3>
+    <div id="socialMedia">
+        <a href=""><img id="facebook" src="images/facebook.jpg" alt="facebook" width="50" height="50"></a>
+        <a href=""><img id="twitter" src="images/twitter.jpg" alt="twitter" width="50" height="50"></a>
+        <a href=""><img id="instagram" src="images/instagram.png" alt="instagram" width="50" height="50"></a>
+        <a href=""><img id="reddit" src="images/reddit.jpg" alt="reddit" width="50" height="50"></a>
+    </div>
+    
+    <div id="copyright">
+        <p>Copyright &copy; 2021 The Floral Spot</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="script/firstScript.js"></script>
+</body>
+</html>

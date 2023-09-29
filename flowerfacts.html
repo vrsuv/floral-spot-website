@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!-- This head section contains all the invisible information about the page -->    
+<head>
+    <title>The Floral Spot - Flower Facts</title>
+    <meta charset= "utf-8">
+    <meta name = "description" content = "This is a website for a community of people interested in flowers.">
+    <meta name = "author" content = "Online Flower Community">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "Flowers Floral Community Online">
+    <link rel = "stylesheet" type = "text/css" href = "Stylesheets/style.css">
+    
+</head>
+
+<body>
+
+<!-- Top navigation bar -->
+<nav> 
+    <!-- Logo -->
+    <div class="logo">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="The Floral Spot logo" width="350" height="90"></a>
+    </div>    
+    
+    <!-- links to the other pages of the website -->
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="links">
+        <ul>
+            <li><a href="index.html"><h1>HOME</h1></a></li>
+            <li><a href="flowerfacts.html"><h1>Flower Facts</h1></a></li>
+            <li><a href="industry.html"><h1>The Flower Industry</h1></a></li>
+            <li><a href="guides.html"><h1>Flower Care Guides</h1></a></li>
+            <li><a href="events.html"><h1>Events</h1></a></li>
+            <li><a href=""><img class="search" src="images/search.jpg" alt="search" width="30" height="30"></a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--Introduction to the page-->
+<div class="page-intro">
+    <h1>Flower Facts</h1>
+    <h3>Get to know everything about nature's beauty, the living things that bring colour to the Earth, the plants that bright up our rooms and the blossoms that colour our lives. Here are the different articles and content you will find interesting about flowers and engaging to discuss with your fellow flower lovers!</h3>
+</div>
+    
+<aside class="pagesAside">
+    
+<!-- Search bar for specific categories -->
+<div class="categorySearch">
+    <input type="text" placeholder="Search for categories..." name="search">
+</div>
+    
+<!-- Links to articles from popular categories -->
+<div class="rightCategories">
+    <h2>Popular categories</h2>
+<ul>
+    <li><a href="#">Types of flowers</a></li>
+    <li><a href="#">Benefits of flowers</a></li>
+    <li><a href="#">Suitable flowers for weather and climate changes</a></li>
+    <li><a href="#">Specific types of flowers</a></li>
+    <li><a href="#">Interesting facts</a></li>
+    <li><a href="#">Flowers for home deco</a></li>
+</ul>
+</div>
+    
+<div class="twoForms">
+<!-- Form to subscribe to newsletter -->
+<div class="form">
+<h2>Subscribe to our newsletter</h2>
+<p>(* denotes compulsory fields)</p>
+    *Name: &nbsp &nbsp &nbsp
+    <input type="text" id="name" width="30">
+    <br /><br />
+    *Email: &nbsp &nbsp &nbsp
+    <input type="text" id="email" size="30">
+
+    <br />
+    <br />
+    <br />
+
+<p class="topicNewsletter">
+I would like to receive newsletters in one or more of the following areas:  
+</p>
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Natural Wonders"> Flower Facts <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Deep Sea Explorations"> The Flower Industry <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Forest Walkabout"> Flower Care Guides <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Mountain Climbing Expedition"> Events <br />
+        
+<br />
+
+<button onclick="checkFormData()">Submit</button>
+<button onClick="resetFormData()"> Reset Form  </button>
+</div>
+    
+<!-- Form to submit enquiries -->
+<div class="enquiry">
+    <h2>Enquiries</h2>
+    <p id="textareaHeader"> Feel free to drop us any questions, suggestions or enquiries you may have: </p>
+
+    <textarea name="REMARKS" id="REMARKS-TEXT-AREA" rows="8" cols="48"></textarea>
+    
+    <br />
+    <br />
+    
+    *Name: &nbsp &nbsp &nbsp
+    <input type="text" id="name" width="30">
+    <br /><br />
+    *Email: &nbsp &nbsp &nbsp
+    <input type="text" id="email" size="30">
+    
+    <br />
+    <br />
+
+    <button onClick="checkFormData()">   Submit       </button>
+    <button onClick="resetFormData()">   Reset Form   </button>
+</div>
+</div>
+    
+</aside>
+
+    
+<!-- Main content -->
+<div id="articles-container">
+    <h1>Articles to start on</h1>
+
+<!-- first article -->
+<div class="article">
+    <a href="https://blog.ediblearrangements.com/types-of-flowers/">
+    <img src="images/flowerfacts1.jpg" alt="50 Most Popular Types of Flowers" width="380" height="250"></a>
+
+    <a href="https://blog.ediblearrangements.com/types-of-flowers/"><h3>50 Most Popular Types of Flowers</h3></a>
+    <p>It might be a known fact to you that, just like any other species, there are thousands and thousands of different types of flowers on this planet. But here are some flowers that are particularly popular and interesting facts about them.</p>
+</div>
+
+<!-- second article -->
+<div class="article">
+    <a href="https://www.countryliving.com/uk/homes-interiors/gardens/a35529533/flowering-shrubs/">
+    <img src="images/flowerfacts2.jpg" alt="22 best flowering shrubs for every season" width="380" height="250"></a>
+    
+    <a href="https://www.countryliving.com/uk/homes-interiors/gardens/a35529533/flowering-shrubs/"><h3>22 best flowering shrubs for every season</h3></a>
+    <p>What is more beautiful than surrounding your homes with rich and bright coloured flowers? Here's everything you need to know about the different types of shrubs suitable for different kinds of weather or seasons in a year.</p>
+</div>
+        
+<!-- third article -->
+<div class="article">
+    <a href="https://www.treehugger.com/corpse-flower-amorphophallus-titanum-5095935">
+    <img src="images/flowerfacts3.jpg" alt="The corpse flower: Description, life cycle, facts and more" width="380" height="250"></a>
+
+    <a href="https://www.treehugger.com/corpse-flower-amorphophallus-titanum-5095935"><h3>The Corpse Flower: Description, Life Cycle, Facts, and More</h3></a>
+    <p>Most of us are used to the small, petite-sized flowers which often give us a warm feeling. But here's everything you need to know about the world's largest flower!</p>
+</div>
+        
+<!-- forth article -->
+<div class="article">
+    <a href="https://www.bhg.com/gardening/flowers/roses/rose-facts/">
+    <img src="images/flowerfacts4.jpeg" alt="^ fascinating facts about roses that you probably didn't know" width="380" height="250"></a>
+
+    <a href="https://www.bhg.com/gardening/flowers/roses/rose-facts/"><h3>6 Fascinating Facts About Roses That You Probably Didn't Know</h3></a>
+    <p>Roses are a very common species of flowers that are used in many occasions. It is always satisfying to learn interesting facts about things you are familiar with.</p>
+</div>
+        
+<!-- fifth article -->
+<div class="article">
+    <a href="https://www.treehugger.com/the-science-of-blue-flowers-4864085">
+    <img src="images/flowerfacts5.jpg" alt="Why Aren't There More Blue Flowers?" width="380" height="250"></a>
+    
+    <a href="https://www.treehugger.com/the-science-of-blue-flowers-4864085"><h3>Why Aren't There More Blue Flowers?</h3></a>
+    <p>Ever wondered about the absense of the blue colour in supermarket floral shelves, or at the nearest nursery you frequent? Here's everything you need to know about blue flowers!</p>
+</div>
+
+<br>
+
+<!-- pagination -->
+<div class="pagination">
+    <a href="#">&laquo;</a>
+    <a class="active" href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+</div>
+
+</div>
+
+<!-- footer -->
+<footer>
+    <h3>Follow us on</h3>
+    <div id="socialMedia">
+        <a href=""><img id="facebook" src="images/facebook.jpg" alt="facebook" width="50" height="50"></a>
+        <a href=""><img id="twitter" src="images/twitter.jpg" alt="twitter" width="50" height="50"></a>
+        <a href=""><img id="instagram" src="images/instagram.png" alt="instagram" width="50" height="50"></a>
+        <a href=""><img id="reddit" src="images/reddit.jpg" alt="reddit" width="50" height="50"></a>
+    </div>
+    
+    <div id="copyright">
+        <p>Copyright &copy; 2021 The Floral Spot</p>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="script/firstScript.js"></script>
+</body>
+</html>

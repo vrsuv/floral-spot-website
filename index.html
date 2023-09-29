@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!-- This head section contains all the invisible information about the page -->    
+<head>
+    <title>The Floral Spot - Home</title>
+    <meta charset= "utf-8">
+    <meta name = "description" content = "This is a website for a community of people interested in flowers.">
+    <meta name = "author" content = "Online Flower Community">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "Flowers Floral Community Online">
+    <link rel = "stylesheet" type = "text/css" href = "Stylesheets/style.css">
+    
+</head>
+    
+<body>
+    
+<!-- Top navigation bar -->
+<nav> 
+    <!-- Logo -->
+    <div class="logo">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="The Floral Spot logo" width="350" height="90"></a>
+    </div>    
+    
+    <!-- links to the other pages of the website -->
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="links">
+        <ul>
+            <li><a href="index.html"><h1>HOME</h1></a></li>
+            <li><a href="flowerfacts.html"><h1>Flower Facts</h1></a></li>
+            <li><a href="industry.html"><h1>The Flower Industry</h1></a></li>
+            <li><a href="guides.html"><h1>Flower Care Guides</h1></a></li>
+            <li><a href="events.html"><h1>Events</h1></a></li>
+            <li><a href=""><img class="search" src="images/search.jpg" alt="search" width="30" height="30"></a></li>
+        </ul>
+    </div>
+</nav>
+    
+<!-- Slideshow for website introduction -->
+<div id="slideshow-container">
+    <!-- First image -->
+    <div class="imgSlides">
+        <div class="numberSlide">1 / 3</div>
+        <img src="images/homepageflower1.png" alt="The floral spot, a comfortable spot for flower enthusiasts and learners" width="1300" height="720">
+    </div>
+    <!-- Second image -->
+    <div class="imgSlides">
+        <div class="numberSlide">2 / 3</div>
+        <img src="images/homepageflower2.png" alt="connect with fellow flower lovers from all over the globe" width="1300" height="720">
+    </div>
+    <!-- Third image -->
+    <div class="imgSlides">
+        <div class="numberSlide">3 / 3</div>
+        <img src="images/homepageflower3.png" alt="From flower care guides to the flower industry, a wide range of areas for you to engage in" width="1300" height="720">
+    </div>
+    
+    <br>
+    
+    <!-- dots to indicate which slide the current image is at -->
+    <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    
+</div>
+    
+<br>
+   
+
+<hr>
+    
+<!-- Description about the club -->
+<div class="aboutUs">
+    <h2>About Us</h2>
+    <p>The Floral Spot aims to be a platform for flower enthusiasts, flower lovers and anyone who is keen in learning about the different aspects of flowers. We have curated reliable articles and blog posts that would cater to readers' interests and make it easier for them to find articles. We hope to encourage people into appreciating and celebrating flowers and eventually beautify their lives with the nature's colours. </p>
+</div>
+
+<hr>
+
+<!-- aside -->
+<aside>
+    
+<div class="twoForms">
+<!-- Form to subscribe to newsletter -->
+<div class="hpForm">
+<h2>Subscribe to our newsletter</h2>
+<p>(* denotes compulsory fields)</p>
+    *Name: &nbsp &nbsp &nbsp
+    <input type="text" id="name" width="30">
+    <br /><br />
+    *Email: &nbsp &nbsp &nbsp
+    <input type="text" id="email" size="30">
+
+    <br />
+    <br />
+    <br />
+    
+<p class="topicNewsletter">
+I would like to receive newsletters in one or more of the following areas:  
+</p>
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Natural Wonders"> Flower Facts <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Deep Sea Explorations"> The Flower Industry <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Forest Walkabout"> Flower Care Guides <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Mountain Climbing Expedition"> Events <br />
+        
+<br />
+
+<button onclick="checkFormData()">Submit</button>
+<button onClick="resetFormData()"> Reset Form  </button>
+</div>  
+
+
+<!-- Form to submit enquiries -->
+<div class="enquiry">
+    <h2>Enquiries</h2>
+    <p id="textareaHeader"> Feel free to drop us any questions, suggestions or enquiries you may have: </p>
+
+    <textarea name="REMARKS" id="REMARKS-TEXT-AREA" rows="8" cols="48"></textarea>
+    
+    <br />
+    <br />
+    
+    *Name: &nbsp &nbsp &nbsp
+    <input type="text" id="name" width="30">
+    <br /><br />
+    *Email: &nbsp &nbsp &nbsp
+    <input type="text" id="email" size="30">
+    
+    <br />
+    <br />
+
+    <button onClick="checkFormData()">   Submit       </button>
+    <button onClick="resetFormData()">   Reset Form   </button>
+</div>
+</div>
+        
+</aside>
+
+<!-- Latest articles -->
+<div id="latestArticles">
+    <h1>LATEST ARTICLES</h1>
+
+<div id="latestArticlesTable">
+<table>
+    <tr>
+        <th><a href="https://www.theguardian.com/lifeandstyle/2021/feb/14/flowers-are-not-just-for-valentines-day">
+            <img class="latestImg" src="images/latest1.jpg" alt="Vietnam's streets blossom with flowers as country's Covid-19 cases keep rising" width="340" height="250">
+            </a></th>
+        <th><a href="https://www.express.co.uk/life-style/garden/1397674/how-to-dry-flowers-air-drying-silica-gel-microwave-EVG">
+            <img class="latestImg" src="images/latest2.jpg" alt="How to dry flowers" width="370" height="250"></a></th>
+        <th><a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2021/02/14/vietnam039s-streets-blossom-with-flowers-as-country039s-covid-19-cases-keep-rising">
+            <img class="latestImg" src="images/latest3.jpg" alt="Flowers are not just for Valentine's day" width="340" height="250"></a></th>
+    </tr>
+    <tr>
+        <td>Vietnam's streets blossom with flowers as</td>
+        <td>How to dry flowers</td>
+        <td>Flowers are not just for Valentine's Day</td>
+    </tr>
+    <tr>
+        <td>country's Covid-19 cases keep rising</td>
+    </tr>
+</table>
+</div>
+
+<p>scroll for more >></p>
+    
+</div>
+    
+<hr>
+  
+<!-- Articles that are most read by members of the club -->
+<div id="popularReads">
+    <h1>POPULAR READS</h1>
+
+<div id="popularReadsTable">
+    <table> 
+        <tr>
+        <th><a href="https://www.detroitnews.com/story/life/home-garden/blogs/gardening/2021/02/11/flowers-attract-adult-butterflies/6720798002/">
+            <img src="images/popular-reads1.jpg" alt="Flowers that attract butterflies" width="340" height="250"></a></th>
+        <th><a href="https://www.theedgemarkets.com/article/floral-industry-slightly-affected-mco">
+            <img src="images/popular-reads2.jpg" alt="floral industy slightly affected by MCO" width="370" height="250"></a></th>
+        <th><a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2021/02/11/flower-villages-ready-to-woo-visitors-for-tet">
+            <img src="images/popular-reads3.jpg" alt="flower villages ready to woo visitors for Tet" width="340" height="250"></a></th>
+        </tr>
+
+        <tr>
+        <td>Flowers that attract butterflies</td>
+        <td>Floral industry slightly affected by MCO</td>
+        <td>Flower villages ready to woo visitors for Tet</td>
+    </tr>
+    </table>
+</div>
+    
+<p>scroll for more >></p>
+    
+</div> 
+        
+<!-- Footer -->
+<footer>
+    <h3>Follow us on</h3>
+    <div id="socialMedia">
+        <a href=""><img id="facebook" src="images/facebook.jpg" alt="facebook" width="50" height="50"></a>
+        <a href=""><img id="twitter" src="images/twitter.jpg" alt="twitter" width="50" height="50"></a>
+        <a href=""><img id="instagram" src="images/instagram.png" alt="instagram" width="50" height="50"></a>
+        <a href=""><img id="reddit" src="images/reddit.jpg" alt="reddit" width="50" height="50"></a>
+    </div>
+    
+<div id="copyright">
+    <p>Copyright &copy; 2021 The Floral Spot</p>
+</div>
+</footer>
+    
+    
+<script type="text/javascript" src="script/firstScript.js"></script>
+    
+</body>
+</html>

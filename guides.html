@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!-- This head section contains all the invisible information about the page -->    
+<head>
+    <title>The Floral Spot - Flower care guides</title>
+    <meta charset= "utf-8">
+    <meta name = "description" content = "This is a website for a community of people interested in flowers.">
+    <meta name = "author" content = "Online Flower Community">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "Flowers Floral Community Online">
+    <link rel = "stylesheet" type = "text/css" href = "Stylesheets/style.css">
+    
+</head>
+
+<body>
+
+<!-- Top navigation bar -->
+<nav> 
+    <!-- Logo -->
+    <div class="logo">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="The Floral Spot logo" width="350" height="90"></a>
+    </div>    
+    
+    <!-- links to the other pages of the website -->
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="links">
+        <ul>
+            <li><a href="index.html"><h1>HOME</h1></a></li>
+            <li><a href="flowerfacts.html"><h1>Flower Facts</h1></a></li>
+            <li><a href="industry.html"><h1>The Flower Industry</h1></a></li>
+            <li><a href="guides.html"><h1>Flower Care Guides</h1></a></li>
+            <li><a href="events.html"><h1>Events</h1></a></li>
+            <li><a href=""><img class="search" src="images/search.jpg" alt="search" width="30" height="30"></a></li>
+        </ul>
+    </div>
+</nav>
+    
+<!--Introduction to the page-->
+<div class="page-intro">
+    <h1>Flower Care Guides</h1>
+    <h3>As much as it is easy for us to admire flowers for their lovely colours and their tendency to brighten up our lives, it is even more special when these very flowers are grown by our own hands and gifted to our loved ones. Or when flowers we receive are maintained to last longer than they usually do. Here's everything you need to know on making the flowers in your lives much more meaningful.</h3>
+</div>
+
+<aside class="pagesAside">
+<!-- Search bar for specific categories -->
+<div class="categorySearch">
+    <input type="text" placeholder="Search for categories..." name="search">
+</div>
+    
+<br>
+    
+<!-- Links to articles from popular categories -->
+<div class="rightCategories">
+    <h2>Popular categories</h2>
+<ul>
+    <li><a href="#">Maintain cut-flowers</a></li>
+    <li><a href="#">How to grow different species of flowers</a></li>
+    <li><a href="#">Tips and tricks in growing flowers</a></li>
+    <li><a href="#">Flowers to grow according to seasons and climate changes</a></li>
+    <li><a href="#">Common tools and chemicals required to grow flowers</a></li>
+    <li><a href="#">Guides for beginners</a></li>
+
+</ul>
+</div>
+    
+<div class="twoForms">
+<!-- Form to subscribe to newsletter -->
+<div class="form">
+<h2>Subscribe to our newsletter</h2>
+<p>(* denotes compulsory fields)</p>
+    *Name: &nbsp &nbsp &nbsp
+    <input type="text" id="name" width="30">
+    <br /><br />
+    *Email: &nbsp &nbsp &nbsp
+    <input type="text" id="email" size="30">
+
+    <br />
+    <br />
+    <br />
+
+<p class="topicNewsletter">
+I would like to receive newsletters in one or more of the following areas:  
+</p>
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Natural Wonders"> Flower Facts <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Deep Sea Explorations"> The Flower Industry <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Forest Walkabout"> Flower Care Guides <br />
+
+    <input type="checkbox" name="SUB-TOPIC-AREA" class="SUB-TOPIC-AREA" value = "Mountain Climbing Expedition"> Events <br />
+        
+<br />
+
+<button onclick="checkFormData()">Submit</button>
+<button onClick="resetFormData()"> Reset Form  </button>
+</div>
+    
+<!-- Form to submit enquiries -->
+<div class="enquiry">
+    <h2>Enquiries</h2>
+    <p id="textareaHeader"> Feel free to drop us any questions, suggestions or enquiries you may have: </p>
+
+    <textarea name="REMARKS" id="REMARKS-TEXT-AREA" rows="8" cols="48"></textarea>
+    
+    <br />
+    <br />
+    
+    *Name: &nbsp &nbsp &nbsp
+    <input type="text" id="name" width="30">
+    <br /><br />
+    *Email: &nbsp &nbsp &nbsp
+    <input type="text" id="email" size="30">
+    
+    <br />
+    <br />
+
+    <button onClick="checkFormData()">   Submit       </button>
+    <button onClick="resetFormData()">   Reset Form   </button>
+</div>
+</div>
+    
+</aside>
+
+    
+<!-- Main content -->
+<div id="articles-container">
+    <h1>Articles to start on</h1>
+
+<!-- first article -->
+<div class="article">
+    <a href="https://krishijagran.com/agripedia/how-to-take-care-of-cut-flowers-at-home-9-hacks/">
+    <img src="images/careguide1.jpg" alt="How to take care of cut flowers at home? 9 hacks" width="380" height="250"></a>
+    
+    <a href="https://krishijagran.com/agripedia/how-to-take-care-of-cut-flowers-at-home-9-hacks/"><h3>How to take care of cut flowers at home? 9 hacks</h3></a>
+    <p>You might have received cut flowers from your loved ones on special occasions. It is said to be relatively hard to take care of them, especially when some species are very prone to withering quickly. But fear not! Here's a guide to taking good care of the flowers that were chosen by your loved ones with love.</p>
+</div>
+
+<!-- second article -->
+<div class="article">
+    <a href="https://www.pinkvilla.com/lifestyle/home-decor/4-simple-tips-take-care-your-hibiscus-flower-and-grow-it-indoors-615640">
+    <img src="images/careguide2.jpg" alt="4 SIMPLE tips to take care of your hibiscus flower and grow it indoors" width="380" height="250"></a>
+    
+    <a href="https://www.pinkvilla.com/lifestyle/home-decor/4-simple-tips-take-care-your-hibiscus-flower-and-grow-it-indoors-615640"><h3>4 SIMPLE tips to take care of your hibiscus flower and grow it indoors</h3></a>
+    <p>Hibiscus flowers are tropical flowers which makes it harder to grow them in our gardens. But here's a guide that says otherwise! Find out the simple tips of growing these bright red flowers.</p>
+</div>
+        
+<!-- third article -->
+<div class="article">
+    <a href="https://www.nytimes.com/2021/02/17/realestate/the-smart-way-to-grow-roses.html">
+    <img src="images/careguide3.jpg" alt="The Smart Way to Grow Roses" width="380" height="250"></a>
+    
+    <a href="https://www.nytimes.com/2021/02/17/realestate/the-smart-way-to-grow-roses.html"><h3>The Smart Way to Grow Roses</h3></a>
+    <p>Roses are very commonly found at any departmental stores but how hard can it be to actually grow them? Here's a guide with smart tips to help you start your journey in creating you very own rose garden!</p>
+</div>
+        
+<!-- forth article -->
+<div class="article">
+    <a href="https://www.proflowers.com/blog/how-to-make-flowers-last-longer">
+    <img src="images/careguide4.jpg" alt="How to Make Flowers Last Longer: 9 Tricks" width="380" height="250"></a>
+    
+    <a href="https://www.proflowers.com/blog/how-to-make-flowers-last-longer"><h3>How to Make Flowers Last Longer: 9 Tricks</h3></a>
+    <p>Cut flowers are more commonly received as gifts from your loved ones who have picked and chosen them with lots of love. Find out the different tricks in keeping these flowers last for a longer time.</p>
+</div>
+        
+<!-- fifth article -->
+<div class="article">
+    <a href="https://www.express.co.uk/life-style/life/1398389/what-to-plant-now-When-to-plant-summer-flowering-bulbs-evg">
+    <img src="images/careguide5.jpg" alt="Flowers to plant NOW: When and how to plant summer flowering bulbs" width="380" height="250"></a>
+    
+    <a href="https://www.express.co.uk/life-style/life/1398389/what-to-plant-now-When-to-plant-summer-flowering-bulbs-evg"><h3>Flowers to plant NOW: When and how to plant summer flowering bulbs</h3></a>
+    <p>The climate is changing and not sure if the flowers you're growing are appropriate for the weather? Here's a guide to what you can plant on summer days!</p>
+</div>
+    
+<br>
+    
+<!-- pagination -->
+<div class="pagination">
+    <a href="#">&laquo;</a>
+    <a class="active" href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+</div>
+
+</div>
+    
+   
+<!-- footer -->
+<footer>
+    <h3>Follow us on</h3>
+    <div id="socialMedia">
+        <a href=""><img id="facebook" src="images/facebook.jpg" alt="facebook" width="50" height="50"></a>
+        <a href=""><img id="twitter" src="images/twitter.jpg" alt="twitter" width="50" height="50"></a>
+        <a href=""><img id="instagram" src="images/instagram.png" alt="instagram" width="50" height="50"></a>
+        <a href=""><img id="reddit" src="images/reddit.jpg" alt="reddit" width="50" height="50"></a>
+    </div>
+    
+    <div id="copyright">
+        <p>Copyright &copy; 2021 The Floral Spot</p>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="script/firstScript.js"></script>
+</body>
+</html>
